@@ -16,7 +16,8 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_activity_home"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true"

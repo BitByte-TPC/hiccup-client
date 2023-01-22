@@ -2,4 +2,8 @@
     <string name="app_name">Hiccup</string>
     <string name="splash_banner">Splash Banner</string>
     <string name="homeactivity">HomeActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="title_profile">Profile</string>
 </resources>
