@@ -1,4 +1,4 @@
-package com.hiccup.hiccup_client.ui.dashboard
+package com.hiccup.hiccup_client.ui.wallet
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.hiccup.hiccup_client.databinding.FragmentDashboardBinding
+import com.hiccup.hiccup_client.databinding.FragmentWalletBinding
 
 class WalletFragment : Fragment() {
 
-    private var _binding: FragmentDashboardBinding? = null
+    private var _binding: FragmentWalletBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class WalletFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val walletViewModel =
+            ViewModelProvider(this)[WalletViewModel::class.java]
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentWalletBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
+        walletViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

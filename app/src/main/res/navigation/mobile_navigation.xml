@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_wallet"
-        android:name="com.hiccup.hiccup_client.ui.dashboard.WalletFragment"
+        android:name="com.hiccup.hiccup_client.ui.wallet.WalletFragment"
         android:label="@string/title_wallet"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_wallet" />
 
     <fragment
         android:id="@+id/navigation_home"
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.hiccup.hiccup_client.ui.notifications.ProfileFragment"
+        android:name="com.hiccup.hiccup_client.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_profile" />
 </navigation>
